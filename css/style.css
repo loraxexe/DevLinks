@@ -63,9 +63,24 @@ body {
     border: 2px solid var(--text-color);
 }
 
-.profile p {
+.profile .user {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile .user p {
     font-weight: 400;
     letter-spacing: 0.4px;
+}
+
+.profile .user button {
+    background: transparent;
+    color: var(--text-color);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* switch */
@@ -183,4 +198,19 @@ footer a {
 footer a:hover {
     color: var(--link-footer);
     transition: all 500ms;
+}
+
+@media screen and (min-width: 800px) {
+
+    .container {
+        width: 400px;
+    }
+
+    :root{
+        --bg-url: url(../image/bg-desktop.jpg);
+    }
+    
+    .light {
+        --bg-url: url(../image/bg-desktop-light.jpg);
+    }
 }
