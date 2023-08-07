@@ -214,7 +214,7 @@ footer a:hover {
     transition: all 500ms;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
 
     .container {
         width: 400px;
@@ -226,6 +226,10 @@ footer a:hover {
     
     .light {
         --bg-url: url(../image/bg-desktop-light.jpg);
+    }
+
+    body {
+     background: var(--bg-url) no-repeat top center/cover;
     }
 }
 
