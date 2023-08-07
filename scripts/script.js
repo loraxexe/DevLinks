@@ -34,6 +34,15 @@ function copyUser() {
       document.body.removeChild(textArea);
     }
   }
+
+  document.getElementById("copy").addEventListener("click", function() {
+    var copiadoMessage = document.querySelector(".copiado");
+    copiadoMessage.style.display = "block"; // Exibe a mensagem
+    
+    setTimeout(function() {
+      copiadoMessage.style.display = "none"; // Remove a mensagem após 2 segundos
+    }, 1500);
+  });
   
   var button = document.getElementById("copy");
   button.addEventListener('click', copyUser);

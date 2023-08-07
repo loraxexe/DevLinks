@@ -17,6 +17,7 @@
     --switch-bg-url: url(../image/moon-stars.svg);
    --stroke-color: rgba(255, 255, 255, 0.50);
     --surface-color: rgba(255, 255, 255, 0.10); 
+    --footer: rgba(193, 193, 193, 0.074);
 }
 
 .light {
@@ -30,6 +31,7 @@
     --switch-bg-url: url(../image/sun.svg);
     --stroke-color: rgba(0, 0, 0, 0.50);
     --surface-color: rgba(0, 0, 0, 0.05); 
+    --footer: rgba(71, 71, 71, 0.214);
 }
 
 body {
@@ -54,7 +56,8 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 8px;
-    padding: 30px 24px 24px 24px;
+    padding: 24px;
+    position: relative;
 }
 
 .profile img {
@@ -81,6 +84,15 @@ body {
     border: none;
     font-size: 20px;
     cursor: pointer;
+}
+
+.profile p.copiado {
+    display: none;
+    position: absolute;
+    bottom: 3%;
+    right: -10%;
+    color: var(--text-color);
+    filter: drop-shadow(-2px 1px 1.5px var(--text-color));
 }
 
 /* switch */
@@ -184,9 +196,11 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    padding: 24px 0;
+    padding: 10px 0;
     font-size: 14px;
     font-weight: 400;
+    background-color: var(--footer);
+    border-radius: 5px;
 }
 
 footer a {
@@ -214,3 +228,6 @@ footer a:hover {
         --bg-url: url(../image/bg-desktop-light.jpg);
     }
 }
+
+
+  
