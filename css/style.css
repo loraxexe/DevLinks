@@ -44,7 +44,7 @@ body {
 .container {
     width: 360px;
     margin: auto;
-    margin-top: 56px;
+    margin-top: 0;
 }
 
 /* perfil */
@@ -54,7 +54,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 8px;
-    padding: 24px;
+    padding: 30px 24px 24px 24px;
 }
 
 .profile img {
@@ -144,7 +144,7 @@ body {
 }
 
  ul li:hover{
-    border: 1.5px solid  var(--border-links);
+    border: 1px solid  var(--border-links);
     background: var(--bg-links); 
     transition: all 200ms;
 }
