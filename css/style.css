@@ -47,6 +47,7 @@ body {
     width: 360px;
     margin: auto;
     margin-top: 0;
+    transition: all 300ms;
 }
 
 /* perfil */
@@ -177,9 +178,9 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 8px;
+    gap: 12px;
     
-    padding: 24px 0;
+    padding-top: 24px;
 }
 
  ul li {
@@ -209,7 +210,7 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    padding: 24px 0;
+    padding: 16px;
     font-size: 24px;
 }
 
@@ -258,11 +259,11 @@ footer a:hover {
     }
 
     :root{
-        --bg-url: url(../image/bg-desktop.jpg);
+        --bg-url: url(../image/bg-mobile.jpg)
     }
     
     .light {
-        --bg-url: url(../image/bg-desktop-light.jpg);
+        --bg-url: url(../image/bg-mobile-light.jpg);
     }
 
     body {
